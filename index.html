@@ -244,12 +244,17 @@ dialog h3{margin:0 0 12px;font-size:15px}
   </section>
 
   <section class="card">
-    <h2>送迎場所</h2>
-    <input type="search" id="locSearch" placeholder="場所名で絞り込み">
-    <table class="list" style="margin-top:10px"><thead><tr><th>場所</th><th>住所</th><th class="act"></th></tr></thead>
-      <tbody id="locTable"></tbody></table>
-    <button class="btn wide primary" id="addLoc" style="margin-top:12px">＋ 場所を追加</button>
-    <p class="hint">住所、または駅名・施設名などのキーワードで検索して登録します。</p>
+    <details id="locDetails">
+      <summary style="font-size:13px;color:var(--sub);font-weight:700;letter-spacing:.06em;cursor:pointer">送迎場所</summary>
+      <div style="margin-top:12px">
+        <p class="hint" style="margin-top:0">駅など、複数人で使う場所をまとめておく一覧です。スタッフ個人の住所は「スタッフ」の追加画面で直接登録でき、ここに先に登録しておく必要はありません。</p>
+        <input type="search" id="locSearch" placeholder="場所名で絞り込み">
+        <table class="list" style="margin-top:10px"><thead><tr><th>場所</th><th>住所</th><th class="act"></th></tr></thead>
+          <tbody id="locTable"></tbody></table>
+        <button class="btn wide primary" id="addLoc" style="margin-top:12px">＋ 場所を追加</button>
+        <p class="hint">住所、または駅名・施設名などのキーワードで検索して登録します。</p>
+      </div>
+    </details>
   </section>
 
   <section class="card">
